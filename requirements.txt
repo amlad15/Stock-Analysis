@@ -1,0 +1,10 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pandas==2.2.2
+numpy==1.26.4
+scipy==1.13.1
+yfinance==0.2.43
+pandas_ta==0.3.14b0
+python-dateutil==2.9.0.post0
+pydantic==2.8.2
+typing_extensions==4.12.2
