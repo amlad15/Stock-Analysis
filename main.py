@@ -236,7 +236,7 @@ def analyze(
     period: str = Query("1y", description="Historical period (e.g., 6mo, 1y, 5y)"),
     x_api_key: str = Header(..., alias="x-api-key"),
 ):
-    if x_api_key != API_KEY:
+    if x_api_key != EXPECTED_API_KEY:   # ✅ uses the variable you set at the top
         raise HTTPException(status_code=401, detail="Invalid API Key")
 
     # Fetch data
@@ -341,4 +341,4 @@ def analyze(
         },
     }
 
-    return response
+    
